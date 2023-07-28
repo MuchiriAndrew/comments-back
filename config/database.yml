@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: comments_back_production
-  username: comments_back
-  password: <%= ENV["COMMENTS_BACK_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
