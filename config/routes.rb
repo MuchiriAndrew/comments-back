@@ -3,4 +3,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  # Routes for Comments
+  resources :comments, only: [:index, :show, :create, :update, :destroy]
+
+  # Routes for Users
+  resources :users, only: [:index, :show]
+
+  # Routes for Replies
+  resources :replies, only: [:index, :show, :create, :update, :destroy]
 end
+

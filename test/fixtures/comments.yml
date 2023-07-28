@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyText
+  user: one
+  parent_comment: one
+  score: 1
+  timestamp: MyString
+
+two:
+  content: MyText
+  user: two
+  parent_comment: two
+  score: 1
+  timestamp: MyString
