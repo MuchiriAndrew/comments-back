@@ -15,3 +15,7 @@
 # User.create(image: "https://i.postimg.cc/prc5qxsX/image-maxblagun.png",name: "maxblagun")
 # User.create(image: "https://i.postimg.cc/LXT1gjfP/image-ramsesmiron.png",name: "ramsesmiron")
 # User.create(image: "https://i.postimg.cc/HsQVrwgk/image-juliusomo.png",name: "juliusomo")
+User.find_by(id: 1)&.update(email: 'jackson.com', password: '123')
+User.find_by(id: 2)&.update(email: 'randim.com', password: 'kaka')
+User.find_by(id: 3)&.update(email: 'yeye.com', password: 'odmo')
+User.find_by(id: 4)&.update(email: 'sos.com', password: 'kkv')
