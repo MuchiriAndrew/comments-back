@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :comments, only: [:index, :show, :create, :update, :destroy]
 
   # Routes for Users
-  resources :users, only: [:index, :show]
+  resources :users, only: [:index, :show, :create]
 
   # Routes for Replies
   resources :replies, only: [:index, :show, :create, :update, :destroy]
