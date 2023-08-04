@@ -13,6 +13,12 @@ class UsersController < ApplicationController
       render json: @user
     end
 
+    def destroy
+      @user = User.find(params[:id])
+      @user.destroy
+      render json: { message: 'User was successfully destroyed.' }
+    end
+
      # POST /replies
     def create
       @user = User.new(user_params)
@@ -29,3 +35,4 @@ class UsersController < ApplicationController
       params.require(:user).permit(:name, :image)
     end
   end
+
