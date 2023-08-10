@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   # Routes for Users
   resources :users, only: [:index, :show, :create, :destroy]
+  post '/login', to: 'sessions#create'
 
   # Routes for Replies
   resources :replies, only: [:index, :show, :create, :update, :destroy]
